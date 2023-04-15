@@ -29,7 +29,7 @@ export default function Home({ images }: { images: any[] }) {
         <h1>Giulia B Nagle</h1>
         <div className={styles.imageContainer}>
           {images.map((image) => (
-            <img className={styles.image} src={urlFor(image.src).url()} />
+            <img key={image.title} className={styles.image} src={urlFor(image.src).url()} />
           ))}
         </div>
       </main>
