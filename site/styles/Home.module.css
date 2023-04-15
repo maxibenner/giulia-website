@@ -1,0 +1,12 @@
+.pageWrapper {
+  padding: 20px;
+}
+.imageContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.image {
+  width: 100%;
+  height: auto;
+}

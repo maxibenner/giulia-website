@@ -8,7 +8,7 @@ const devOnlyPlugins = [getStartedPlugin()]
 
 export default defineConfig({
   name: 'default',
-  title: 'dimgray-seahorse',
+  title: 'giulia-website',
 
   projectId: 'jjb62inr',
   dataset: 'production',
