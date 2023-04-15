@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { createClient } from "next-sanity";
 import imageUrlBuilder from "@sanity/image-url";
+import Image from "next/image";
 
 const client = createClient({
   projectId: "jjb62inr",
@@ -28,7 +29,12 @@ export default function Home({ images }: { images: any[] }) {
         <h1>Giulia B Nagle</h1>
         <div className={styles.imageContainer}>
           {images.map((image) => (
-            <img key={image.title} className={styles.image} src={urlFor(image.src).url()} />
+            <Image
+              alt={image.title}
+              key={image.title}
+              className={styles.image}
+              src={urlFor(image.src).url()}
+            />
           ))}
         </div>
       </main>
